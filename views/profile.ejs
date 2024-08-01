@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffc8c8;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .profile-container {
+      background-color: #ffffff;
+      padding: 40px;
+      border-radius: 30px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 350px;
+    }
+    img {
+      max-width: 150px;
+      border-radius: 50%;
+      margin: 20px;
+    }
+    h1 {
+      margin-bottom: 20px;
+      font-size: 28px;
+      color: #007BFF;
+    }
+    .profile-info {
+      margin: 10px 0;
+    }
+    .profile-info p {
+      margin: 5px 0;
+      font-size: 18px;
+      color: black;
+    }
+    .profile-info .name {
+      font-size: 25px;
+      font-weight: bold;
+      color: #fc3782;
+      margin-bottom: 25px;
+    }
+  </style>
+</head>
+<body>
+  <div class="profile-container">
+    <h1>Biodata</h1>
+    <img src="<%= profile.foto %>" alt="Foto Profil">
+    <div class="profile-info">
+      <p class="name"><%= profile.nama %></p>
+      <p>NIM: <%= profile.nim %></p>
+      <p>Departemen: <%= profile.jurusan %></p>
+      <p>Email: <%= profile.email %></p>
+    </div>
+  </div>
+</body>
+</html>
